@@ -206,7 +206,7 @@ importers:
       app-builder-bin: 4.0.0
       bluebird-lst: ^1.0.9
       builder-util-runtime: workspace:*
-      chalk: ^4.1.1
+      chalk: ^5.0.0
       cross-spawn: ^7.0.3
       debug: ^4.3.4
       fs-extra: ^10.1.0
@@ -224,7 +224,7 @@ importers:
       app-builder-bin: 4.0.0
       bluebird-lst: 1.0.9
       builder-util-runtime: link:../builder-util-runtime
-      chalk: 4.1.2
+      chalk: 5.1.2
       cross-spawn: 7.0.3
       debug: 4.3.4
       fs-extra: 10.1.0
@@ -288,7 +288,7 @@ importers:
       app-builder-lib: workspace:*
       builder-util: workspace:*
       builder-util-runtime: workspace:*
-      chalk: ^4.1.1
+      chalk: ^5.0.0
       dmg-builder: workspace:*
       fs-extra: ^10.1.0
       is-ci: ^3.0.0
@@ -301,7 +301,7 @@ importers:
       app-builder-lib: link:../app-builder-lib
       builder-util: link:../builder-util
       builder-util-runtime: link:../builder-util-runtime
-      chalk: 4.1.2
+      chalk: 5.1.2
       dmg-builder: link:../dmg-builder
       fs-extra: 10.1.0
       is-ci: 3.0.1
@@ -363,7 +363,7 @@ importers:
       '@types/mime': 2.0.3
       builder-util: workspace:*
       builder-util-runtime: workspace:*
-      chalk: ^4.1.1
+      chalk: ^5.0.0
       fs-extra: ^10.1.0
       lazy-val: ^1.0.5
       mime: ^2.5.2
@@ -371,7 +371,7 @@ importers:
       '@types/fs-extra': 9.0.13
       builder-util: link:../builder-util
       builder-util-runtime: link:../builder-util-runtime
-      chalk: 4.1.2
+      chalk: 5.1.2
       fs-extra: 10.1.0
       lazy-val: 1.0.5
       mime: 2.6.0
@@ -4492,6 +4492,11 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
 
+  /chalk/5.1.2:
+    resolution: {integrity: sha512-E5CkT4jWURs1Vy5qGJye+XwCkNj7Od3Af7CP6SujMetSMkLs8Do2RWJK5yx1wamHV/op8Rz+9rltjaTQWDnEFQ==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
+
   /char-regex/1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
@@ -5811,7 +5816,7 @@ packages:
       ajv: 6.12.6
       crc: 3.8.0
       iconv-corefoundation: 1.1.7
-      plist: 3.0.5
+      plist: 3.0.6
       smart-buffer: 4.2.0
       verror: 1.10.1
     dev: false
@@ -9796,14 +9801,6 @@ packages:
     dependencies:
       semver-compare: 1.0.0
 
-  /plist/3.0.5:
-    resolution: {integrity: sha512-83vX4eYdQp3vP9SxuYgEM/G/pJQqLUz/V/xzPrzruLs7fz7jxGQ1msZ/mg1nwZxUSuOp4sb+/bEIbRrbzZRxDA==}
-    engines: {node: '>=6'}
-    dependencies:
-      base64-js: 1.5.1
-      xmlbuilder: 9.0.7
-    dev: false
-
   /plist/3.0.6:
     resolution: {integrity: sha512-WiIVYyrp8TD4w8yCvyeIr+lkmrGRd5u0VbRnU+tP/aRLxP/YadJUYOMZJ/6hIa3oUyVCsycXvtNRgd5XBJIbiA==}
     engines: {node: '>=6'}
@@ -11402,6 +11399,7 @@ packages:
 
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+    requiresBuild: true
     dependencies:
       punycode: 2.1.1
 
@@ -11661,12 +11659,6 @@ packages:
   /xmlbuilder/15.1.1:
     resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
     engines: {node: '>=8.0'}
-    requiresBuild: true
-    dev: false
-
-  /xmlbuilder/9.0.7:
-    resolution: {integrity: sha512-7YXTQc3P2l9+0rjaUbLwMKRhtmwg1M1eDf6nag7urC7pIPYLD9W/jmzQ4ptRSUbodw5S0jfoGTflLemQibSpeQ==}
-    engines: {node: '>=4.0'}
     requiresBuild: true
     dev: false
 
