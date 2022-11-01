@@ -79,7 +79,7 @@ importers:
 
   packages/app-builder-lib:
     specifiers:
-      7zip-bin: ~5.1.1
+      7zip-bin: ~5.2.0
       '@babel/core': 7.15.5
       '@babel/plugin-proposal-class-properties': 7.14.5
       '@babel/plugin-proposal-decorators': 7.15.4
@@ -136,7 +136,7 @@ importers:
       tar: ^6.1.11
       temp-file: ^3.4.0
     dependencies:
-      7zip-bin: 5.1.1
+      7zip-bin: 5.2.0
       '@develar/schema-utils': 2.6.5
       '@electron/universal': 1.3.3
       '@malept/flatpak-bundler': 0.4.0
@@ -196,7 +196,7 @@ importers:
 
   packages/builder-util:
     specifiers:
-      7zip-bin: ~5.1.1
+      7zip-bin: ~5.2.0
       '@types/cross-spawn': 6.0.2
       '@types/debug': ^4.1.6
       '@types/fs-extra': ^9.0.11
@@ -218,7 +218,7 @@ importers:
       stat-mode: ^1.0.0
       temp-file: ^3.4.0
     dependencies:
-      7zip-bin: 5.1.1
+      7zip-bin: 5.2.0
       '@types/debug': 4.1.7
       '@types/fs-extra': 9.0.13
       app-builder-bin: 4.0.0
@@ -315,7 +315,7 @@ importers:
 
   packages/electron-builder-squirrel-windows:
     specifiers:
-      7zip-bin: ~5.1.1
+      7zip-bin: ~5.2.0
       '@types/archiver': 5.3.1
       '@types/fs-extra': 9.0.13
       app-builder-lib: workspace:*
@@ -328,7 +328,7 @@ importers:
       builder-util: link:../builder-util
       fs-extra: 10.1.0
     optionalDependencies:
-      7zip-bin: 5.1.1
+      7zip-bin: 5.2.0
     devDependencies:
       '@types/archiver': 5.3.1
       '@types/fs-extra': 9.0.13
@@ -478,6 +478,10 @@ packages:
 
   /7zip-bin/5.1.1:
     resolution: {integrity: sha512-sAP4LldeWNz0lNzmTird3uWfFDWWTeg6V/MsmyyLR9X1idwKBWIgt/ZvinqQldJm3LecKEs1emkbquO6PCiLVQ==}
+    dev: false
+
+  /7zip-bin/5.2.0:
+    resolution: {integrity: sha512-ukTPVhqG4jNzMro2qA9HSCSSVJN3aN7tlb+hfqYCt3ER0yWroeA2VR38MNrOHLQ/cVj+DaIMad0kFCtWWowh/A==}
     dev: false
 
   /@ampproject/remapping/2.1.2:
@@ -5811,7 +5815,7 @@ packages:
       ajv: 6.12.6
       crc: 3.8.0
       iconv-corefoundation: 1.1.7
-      plist: 3.0.5
+      plist: 3.0.6
       smart-buffer: 4.2.0
       verror: 1.10.1
     dev: false
@@ -9796,14 +9800,6 @@ packages:
     dependencies:
       semver-compare: 1.0.0
 
-  /plist/3.0.5:
-    resolution: {integrity: sha512-83vX4eYdQp3vP9SxuYgEM/G/pJQqLUz/V/xzPrzruLs7fz7jxGQ1msZ/mg1nwZxUSuOp4sb+/bEIbRrbzZRxDA==}
-    engines: {node: '>=6'}
-    dependencies:
-      base64-js: 1.5.1
-      xmlbuilder: 9.0.7
-    dev: false
-
   /plist/3.0.6:
     resolution: {integrity: sha512-WiIVYyrp8TD4w8yCvyeIr+lkmrGRd5u0VbRnU+tP/aRLxP/YadJUYOMZJ/6hIa3oUyVCsycXvtNRgd5XBJIbiA==}
     engines: {node: '>=6'}
@@ -11402,6 +11398,7 @@ packages:
 
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+    requiresBuild: true
     dependencies:
       punycode: 2.1.1
 
@@ -11661,12 +11658,6 @@ packages:
   /xmlbuilder/15.1.1:
     resolution: {integrity: sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==}
     engines: {node: '>=8.0'}
-    requiresBuild: true
-    dev: false
-
-  /xmlbuilder/9.0.7:
-    resolution: {integrity: sha512-7YXTQc3P2l9+0rjaUbLwMKRhtmwg1M1eDf6nag7urC7pIPYLD9W/jmzQ4ptRSUbodw5S0jfoGTflLemQibSpeQ==}
-    engines: {node: '>=4.0'}
     requiresBuild: true
     dev: false
 
